@@ -20,30 +20,29 @@ for line in fh:
 
 
 
-beginyear = '12/Oct/1994'
-beginmonth = 'Oct/1994'
-endyear = '12/Oct/1995'
-
-
-# finding the number of orders in the last year 
+####finding the number of orders in the last year 
 
 #finding the start of the year
 
- startyear = clear.count(beginyear)
+startyear = clean.count(beginyear)
   
 #if the beginning of the year doesn't appear in the list then start on the first avalible date of october 1994
-if startyear == 0:
-  start = 0
 if startyear > 0:
   for x in clean:
-    simpdate = x[3:11]
-    if simpdate == 'Oct/1994':
+    if x == beginyear:
       start = (clean.index(x))
       break
-      
+if startyear == 0:
+  for x in clean:
+    simpdate = x[7:11]
+    if simpdate == '1994':
+      start = (clean.index(x))
+      break
+
+
 #finding the end of the year      
 
-finishyear = clear.count(endyear)
+finishyear = clean.count(endyear)
 if finishyear > 0:
   for x in clean:
     #if end of year exists find the index and subtract 1 so it ends at a year
@@ -52,8 +51,7 @@ if finishyear > 0:
       break
 else:
   end = len(clean)
-
-
+ 
   
 #determining number of orders total and last year  
 total_log = len(clean)
