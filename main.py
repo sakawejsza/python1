@@ -29,10 +29,10 @@ endyear = '12/Oct/1995'
 
 #finding the start of the year
 
- startyear = count(beginyear)
+ startyear = clear.count(beginyear)
   
 #if the beginning of the year doesn't appear in the list then start on the first avalible date of october 1994
-if startyear == 0
+if startyear == 0:
   start = 0
 if startyear > 0:
   for x in clean:
@@ -43,7 +43,7 @@ if startyear > 0:
       
 #finding the end of the year      
 
-finishyear = count(endyear)
+finishyear = clear.count(endyear)
 if finishyear > 0:
   for x in clean:
     #if end of year exists find the index and subtract 1 so it ends at a year
