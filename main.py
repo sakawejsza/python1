@@ -1,4 +1,4 @@
-FILE_NAME = 'c:/Users/sakaw/Downloads/TCMG 412/local_copy.txt'
+FILE_NAME = './local_copy.txt'
 
 beginyear = '12/Oct/1994' #beginning of year
 beginmonth = 'Oct/1994' #beginning month
