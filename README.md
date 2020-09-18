@@ -2,7 +2,7 @@
 
 # localcopy.py
   - fetchs a file from a URL and save a local copy to disk for use later
-  - You will need to change local file to the one for your machine
+  - You will need to change LOCAL_FILE to the path for your machine
 # main.py
   - Uses local copy from localcopy.py to create a list of dates
   - Need to change FILE_NAME to your local copy of the file
