@@ -1,7 +1,21 @@
+FILE_NAME = 'c:/Users/sakaw/Downloads/TCMG 412/local_copy.txt'
+
+# Use open() to get a filehandle that can access the file
+fh = open(FILE_NAME)
+clean = []
+# Loop through the file 
+for line in fh:
+  elements = line.split(" ")
+  #collect date data
+  date = elements[3]
+  #clean up date
+  clean.append(date[1:12])  
+
+
+
 beginyear = '12/Oct/1994'
 beginmonth = 'Oct/1994'
 endyear = '12/Oct/1995'
-clean=[]
 
 
 #put line into list
@@ -41,4 +55,5 @@ else
 total_log = clean.length()
 total_year = end - start
         
-
+print( total_log)
+print(total_year)
