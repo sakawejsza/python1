@@ -5,27 +5,19 @@ fh = open(FILE_NAME)
 clean = []
 # Loop through the file 
 for line in fh:
+  #put line into list
   elements = line.split(" ")
   #collect date data
   date = elements[3]
   #clean up date
-  clean.append(date[1:12])  
+  clean.append(date[1:12])
+  # have a list named clean full of dates day/month/year
 
 
 
 beginyear = '12/Oct/1994'
 beginmonth = 'Oct/1994'
 endyear = '12/Oct/1995'
-
-
-#put line into list
-elements = line.split()
-#collect date data
-date = elements[3]
-#clean up date
-clean.append(date[1:12])
-# have a list named clean full of dates day/month/year
-
 
 
 # finding the number of orders in the last year 
